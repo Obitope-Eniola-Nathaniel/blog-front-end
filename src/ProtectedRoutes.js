@@ -13,7 +13,7 @@ export default function ProtectedRoutes() {
     <Outlet />
   ) : (
     // Redirect to home page ("/") and save current location in state
-    <Navigate to="/" replace state={{ from: location }} />
+    <Navigate to="/login" replace state={{ from: location }} />
   );
 }
 

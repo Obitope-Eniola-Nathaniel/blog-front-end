@@ -6,6 +6,8 @@ function RegistrationForm() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [register, setRegister] = useState(false);
+  const [error, setError] = useState("");
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,20 +29,21 @@ function RegistrationForm() {
       .then((response) => {
         console.log("Registration successful:", response.data);
         setRegister(true);
+        setError("");
+        window.location.href = "/login";
       })
       .catch((error) => {
         console.error("Registration error:", error);
-        error = new Error();
+        setError("Registration failed. Please check your details.", error);
+        setRegister(false);
       });
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      {register ? (
-        <p className="text-success">You Are Registered Successfully</p>
-      ) : (
-        <p className="text-danger">You Are Not Registered</p>
-      )}
+      {register && <p className="text-success">Registered Successfully!</p>}
+      {error && <p className="text-danger">{error}</p>}
+
       <div>
         <label htmlFor="username">Username:</label>
         <input

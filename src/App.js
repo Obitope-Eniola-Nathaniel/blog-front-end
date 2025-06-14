@@ -15,6 +15,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
+          {/* Public routes */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<LoginForm />} />

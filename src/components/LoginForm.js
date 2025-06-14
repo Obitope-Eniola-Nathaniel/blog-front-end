@@ -8,13 +8,11 @@ function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Login:", { email, password });
-    // Add your authentication logic here
-    // alert("Login successful!");
-    
+
     // set configurations
     const configuration = {
       method: "post",
@@ -32,25 +30,27 @@ function LoginForm() {
           path: "/",
           expires: new Date(Date.now() + 24 * 60 * 60 * 1000), // 1 day
         });
-        // redirect user to the auth page
-        window.location.href = "/contact";
-        console.log("Login successful:", response.data);
         setLogin(true);
+        setError("");
+        // redirect user to the home page
+        window.location.href = "/";
+        console.log("Login successful:", response.data);
       })
       .catch((error) => {
         console.error("Login error:", error);
-        error = new Error();
+        setError("Login failed. Please try again.");
+        setLogin(false);
       });
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      {/* display success message */}
-        {login ? (
-          <p className="text-success">You Are Logged in Successfully</p>
-        ) : (
-          <p className="text-danger">You Are Not Logged in</p>
-        )}
+      {login ? (
+        <p className="text-success">You Are Logged in Successfully</p>
+      ) : (
+        <p className="text-danger">You Are Not Logged in</p>
+      )}
+      {error && <p className="text-danger">{error}</p>}
       <div>
         <label htmlFor="email">Email:</label>
         <input

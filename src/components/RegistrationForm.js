@@ -40,7 +40,7 @@ function RegistrationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="login-form"  onSubmit={handleSubmit}>
       {register && <p className="text-success">Registered Successfully!</p>}
       {error && <p className="text-danger">{error}</p>}
 
@@ -75,7 +75,7 @@ function RegistrationForm() {
         />
       </div>
 
-      <button type="submit">Register</button>
+      <button type="submit" className="btn">Register</button>
     </form>
   );
 }

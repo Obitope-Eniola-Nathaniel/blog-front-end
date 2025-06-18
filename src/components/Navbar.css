@@ -24,6 +24,8 @@
   cursor: pointer;
   display: none;
   color: #6064da;
+  border: 2px solid #6064da;
+  border-radius: 5px;
 }
 
 .navbar-menu {

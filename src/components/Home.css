@@ -1,8 +1,11 @@
 .showblog {
   text-align: center;
   padding: 50px 20px;
-  background-color: #6064da;
+  background-color: rgb(96, 100, 218);
   color: #fff;
+  background: linear-gradient(rgba(96, 100, 218, 0.5), rgba(96, 100, 218, 0.5)),url(../images/showblog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .showblog h1 {
@@ -19,4 +22,9 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 30px;
+  background-color: #fff;
+  color: #6064da;
+  width: 250px;
+  margin: 0 auto;
+  padding: 10px;
 }

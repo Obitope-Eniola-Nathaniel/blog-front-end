@@ -3,7 +3,8 @@
   padding: 50px 20px;
   background-color: rgb(96, 100, 218);
   color: #fff;
-  background: linear-gradient(rgba(96, 100, 218, 0.5), rgba(96, 100, 218, 0.5)),url(../images/showblog.jpg);
+  background: linear-gradient(rgba(96, 100, 218, 0.5), rgba(96, 100, 218, 0.5)),
+    url(../images/showblog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,4 +28,14 @@
   width: 250px;
   margin: 0 auto;
   padding: 10px;
+}
+
+.features {
+  text-align: center;
+  color: #6064da;
+}
+
+.image-people {
+  height: auto;
+  width: 90%;
 }

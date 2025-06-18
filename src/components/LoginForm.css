@@ -1,0 +1,37 @@
+
+
+.login-form {
+  /* border: 2px solid #6064da; */
+  box-shadow: 0 1px 3px #6064da;
+  padding: 40px;
+  max-width: 70%;
+  height: 350px;
+  margin: 50px auto;
+}
+
+.login-form div {
+  width: 100%;
+}
+
+label, input {
+  display: block;
+  color: rgb(96, 100, 218);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  
+}
+
+input{
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #6064da;
+    color: white;
+    border: none;
+     outline: none;
+}
+
+input:focus {
+  /* outline: none; */
+  box-shadow: 0 0 5px #6064da;
+}

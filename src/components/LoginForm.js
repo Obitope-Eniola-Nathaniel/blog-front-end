@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Cookies from "universal-cookie";
+import "./LoginForm.css";
 
 
 const cookies = new Cookies();
@@ -45,7 +46,7 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="login-form" onSubmit={handleSubmit}>
       {login ? (
         <p className="text-success">You Are Logged in Successfully</p>
       ) : (

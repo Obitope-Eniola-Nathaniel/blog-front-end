@@ -5,13 +5,13 @@
   padding: 1rem;
   background-color: #ffffff;
   color: white;
-  box-shadow: 0 2px 4px #6064da;
+  box-shadow: 0 1px 3px #6064da;
 }
 
 .navbar-brand .logo {
-  font-family: Ammonite, sans-serif;
+  font-family:'Lucida Sans';
   color: #6064da;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .navbar-brand a {
@@ -56,7 +56,7 @@
     width: 100%;
     background-color: #fff;
     text-align: center;
-    box-shadow: 0 4px 2px -2px #6064da;
+    box-shadow: 1px 2px 3px #6064da;
   }
 
   .navbar-menu.active {

@@ -1,0 +1,22 @@
+.showblog {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #6064da;
+  color: #fff;
+}
+
+.showblog h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.showblog p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.happy-blogging {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+}

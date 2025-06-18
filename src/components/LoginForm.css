@@ -4,6 +4,9 @@
   padding: 40px;
   width: 80%;
   margin: 50px auto;
+  background: linear-gradient(rgba(96, 100, 218, 0.5), rgba(96, 100, 218, 0.5)),url(../images/showblog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .login-form div {
@@ -13,7 +16,8 @@
 label,
 input {
   display: block;
-  color: rgb(96, 100, 218);
+  /* color: rgb(96, 100, 218); */
+  color: #fff;
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
@@ -22,8 +26,8 @@ input {
   margin: 20px 0;
   width: 100%;
   padding: 10px;
-  background-color: #6064da;
-  color: white;
+  background-color: white;
+  color: #6064da;
   border: none;
   outline: none;
 }

@@ -12,8 +12,8 @@ export default function ProtectedRoutes() {
     // Show nested route content if token exists
     <Outlet />
   ) : (
-    // Redirect to home page ("/") and save current location in state
-    <Navigate to="/login" replace state={{ from: location }} />
+    // Redirect to login page ("/login") and save current location in state
+    <Navigate to="/login" replace state={{ from: location, message: "You must be logged in to view that page" }} />
   );
 }
 

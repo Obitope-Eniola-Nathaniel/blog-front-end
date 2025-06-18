@@ -3,12 +3,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
+  background-color: #ffffff;
   color: white;
+  box-shadow: 0 2px 4px #6064da;
+}
+
+.navbar-brand .logo {
+  font-family: Ammonite, sans-serif;
+  color: #6064da;
+  font-size: 3rem;
 }
 
 .navbar-brand a {
-  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -17,6 +23,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+  color: #6064da;
 }
 
 .navbar-menu {
@@ -31,7 +38,7 @@
 }
 
 .navbar-menu li a {
-  color: white;
+  color: #6064da;
   text-decoration: none;
 }
 
@@ -47,8 +54,9 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #fff;
     text-align: center;
+    box-shadow: 0 4px 2px -2px #6064da;
   }
 
   .navbar-menu.active {

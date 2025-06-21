@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import LoginForm from "./components/LoginForm";
 import RegistrationForm from "./components/RegistrationForm";
 import ProtectedRoutes from "./ProtectedRoutes";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           </Route>
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }

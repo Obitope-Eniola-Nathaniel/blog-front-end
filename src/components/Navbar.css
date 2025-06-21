@@ -9,7 +9,7 @@
 }
 
 .navbar-brand .logo {
-  font-family:'Lucida Sans';
+  font-family: "Lucida Sans";
   color: #6064da;
   font-size: 2rem;
 }
@@ -42,6 +42,23 @@
 .navbar-menu li a {
   color: #6064da;
   text-decoration: none;
+}
+
+.text {
+  width: 30ch;
+  display: inline-block;
+  text-wrap: nowrap;
+  overflow: hidden;
+  /* margin: 100px; */
+  animation: typing 3s steps(45) infinite alternate-reverse;
+  font-size: 1.5rem;
+   color: #6064da;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
 @media (max-width: 768px) {

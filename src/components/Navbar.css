@@ -45,7 +45,7 @@
 }
 
 .text {
-  width: 25ch;
+  width: 15ch;
   display: inline-block;
   text-wrap: nowrap;
   overflow: hidden;
